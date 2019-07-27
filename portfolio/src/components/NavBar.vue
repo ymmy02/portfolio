@@ -14,15 +14,18 @@
       <v-spacer></v-spacer>
 
       <v-toolbar-items>
-        <v-btn text>
+        <v-btn text href="#profile" 
+        v-smooth-scroll="{ duration: 500, offset: 0, container: '' }">
             <v-icon>mdi-account-circle-outline</v-icon>
             Profile
         </v-btn>
-        <v-btn text>
+        <v-btn text href="#skill"
+        v-smooth-scroll="{ duration: 500, offset: 0, container: '' }">
             <v-icon>mdi-laptop</v-icon>
             Skill
         </v-btn>
-        <v-btn text>
+        <v-btn text href="#hobby"
+        v-smooth-scroll="{ duration: 500, offset: 0, container: '' }">
             <v-icon>mdi-heart-outline</v-icon>
             Hobby
         </v-btn>

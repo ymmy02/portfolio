@@ -4,13 +4,13 @@
     <v-content class="grey lighten-4">
       <TitleLogo />
     </v-content>
-    <v-content class="grey lighten-5">
+    <v-content id="profile" class="grey lighten-5">
       <Profile />
     </v-content>
-    <v-content class="grey lighten-5">
+    <v-content id="skill" class="grey lighten-5">
       <Skill />
     </v-content>
-    <v-content class="grey lighten-5">
+    <v-content id="hobby" class="grey lighten-5">
       <Hobby />
     </v-content>
   </v-app>
