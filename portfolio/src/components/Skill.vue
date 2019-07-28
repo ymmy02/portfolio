@@ -5,7 +5,13 @@
             Skill
         </h2>
         <v-layout wrap>
-            <SkillCard v-for="card in cards" :key="card.title" />
+            <SkillCard 
+                v-for="card in cards"
+                :key="card.title"
+                :title="card.title"
+                :content="card.content"
+                :images="card.images"
+            />
         </v-layout>
     </div>
 </template>
@@ -21,9 +27,23 @@ export default {
     data: () => {
         return {
             cards: [
-                {title: 'Programming Language'},
-                {title: 'Backend'},
-                {title: 'Frontend'}
+                {
+                    title: 'Programming Language',
+                    content: 'C/C++, Python, Javascript, Java',
+                    images: [
+                        require('../assets/programming-language/python.png'),
+                        require('../assets/programming-language/javascript.png'),
+                        require('../assets/programming-language/golang.png'),
+                    ]
+                },
+                {
+                    title: 'Backend',
+                    content: 'Django, Node'
+                },
+                {
+                    title: 'Frontend',
+                    content: 'Vue.js, React.js, jQuery'
+                }
             ]
         }
     }
