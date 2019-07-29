@@ -5,6 +5,13 @@
             Profile
         </h2>
         <v-layout align-center justify-center>
+               <v-img
+                src="../assets/profile-image.png"
+                lazy-src="../assets/profile-image.png"
+                aspect-ratio="1"
+                max-width="300"
+                max-height="300"
+            ></v-img>
             <p class="text">{{ text }}</p>
         </v-layout>
     </div>
