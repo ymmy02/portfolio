@@ -5,14 +5,13 @@
             Profile
         </h2>
         <v-layout align-center justify-center>
-            <v-img
-                src="../assets/profile-image.png"
-                lazy-src="../assets/profile-image.png"
+            <img 
+                src="../assets/profile-image.png" 
+                alt="Profile Image"
                 class="mx-5"
-                aspect-ratio="1"
-                max-width="300"
-                max-height="300"
-            ></v-img>
+                width="300"
+                height="300"
+            >
             <p class="text mx-5" md-3>
                 はじめまして、データエンジニアとフルスタックエンジニアとして活動しているヤマモトコウヘイと申します。
                 <br>
