@@ -5,7 +5,7 @@
             src="../assets/title-logo.png"
             lazy-src="../assets/title-logo.png"
             max-width="500"
-            max-height="300"
+            max-height="auto"
             ></v-img>
         </div>
   </v-layout>

@@ -13,6 +13,7 @@
     <v-content id="hobby" class="grey lighten-5">
       <Hobby />
     </v-content>
+    <Footer />
   </v-app>
 </template>
 
@@ -22,6 +23,7 @@ import TitleLogo from './components/TitleLogo';
 import Profile from './components/Profile';
 import Skill from './components/Skill';
 import Hobby from './components/Hobby';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
     TitleLogo,
     Profile,
     Skill,
-    Hobby
+    Hobby,
+    Footer
   },
   data: () => ({
     //
