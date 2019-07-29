@@ -1,4 +1,4 @@
 module.exports = {
-    publicPath: '/portfolio/',
+    // publicPath: '/portfolio/',  // Important: Remove this comment-out when you build
     outputDir: 'docs'
 }
