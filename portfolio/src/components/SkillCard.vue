@@ -1,5 +1,5 @@
 <template>
-  <v-flex md6>
+  <v-flex md6 sm12>
     <v-hover v-slot:default="{ hover }">
         <v-card
             height="250"
