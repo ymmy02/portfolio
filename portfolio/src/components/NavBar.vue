@@ -1,11 +1,6 @@
 <template>
-  <div>
-    <v-toolbar
-      :extended="extended"
-      :prominent="prominent"
-      :dense="dense"
-      :collapse="collapse"
-      :flat="flat"
+  <nav>
+    <v-toolbar app flat
       :src="bg ? background : undefined"
       :extension-height="extensionHeight"
     >
@@ -34,19 +29,13 @@
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
-  </div>
+  </nav>
 </template>
 
 <script>
   export default {
     name: 'NavBar',
     data: () => ({
-      extended: false,
-      extendedSlot: false,
-      prominent: false,
-      dense: false,
-      collapse: false,
-      flat: true,
       bg: true,
       extensionHeight: 48,
       background: require('@/assets/navbar-background.jpg')

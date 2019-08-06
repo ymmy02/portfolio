@@ -1,16 +1,10 @@
 <template>
   <v-app>
     <NavBar />
-    <v-content class="grey lighten-4">
+    <v-content class="grey lighten-5">
       <TitleLogo />
-    </v-content>
-    <v-content id="profile" class="grey lighten-5">
       <Profile />
-    </v-content>
-    <v-content id="skill" class="grey lighten-5">
       <Skill />
-    </v-content>
-    <v-content id="hobby" class="grey lighten-5">
       <Hobby />
     </v-content>
     <Footer />

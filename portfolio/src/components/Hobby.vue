@@ -1,5 +1,5 @@
 <template>
-    <div class="hobby">
+    <div id="hobby">
         <h2 class="content-title font-weight-regular mt-4 ml-4">
             <v-icon>mdi-heart-outline</v-icon>
             Hobby

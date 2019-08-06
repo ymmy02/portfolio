@@ -1,5 +1,5 @@
 <template>
-    <div class="skill">
+    <div id="skill">
         <h2 class="content-title font-weight-regular mt-4 ml-4">
             <v-icon>mdi-laptop</v-icon>
             Skill
