@@ -8,7 +8,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-toolbar-items>
+      <v-toolbar-items class="hidden-xs-only">
         <v-btn text href="#profile" 
         v-smooth-scroll="{ duration: 500, offset: 0, container: '' }">
             <v-icon>mdi-account-circle-outline</v-icon>
@@ -28,7 +28,48 @@
             <v-icon>mdi-github-circle</v-icon>
         </v-btn>
       </v-toolbar-items>
+      <v-app-bar-nav-icon 
+        class="hidden-sm-and-up"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
     </v-toolbar>
+
+    <v-navigation-drawer right v-model="drawer" app class="grey lighten-5">
+      <v-list dense>
+        <v-list-item text href="#profile" 
+        v-smooth-scroll="{ duration: 500, offset: 0, container: '' }">
+          <v-list-item-icon>
+            <v-icon>mdi-account-circle-outline</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Profile</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item text href="#skill" 
+        v-smooth-scroll="{ duration: 500, offset: 0, container: '' }">
+          <v-list-item-icon>
+            <v-icon>mdi-laptop</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Skill</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item text href="#hobby" 
+        v-smooth-scroll="{ duration: 500, offset: 0, container: '' }">
+          <v-list-item-icon>
+            <v-icon>mdi-heart-outline</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Hobby</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
   </nav>
 </template>
 
@@ -38,7 +79,8 @@
     data: () => ({
       bg: true,
       extensionHeight: 48,
-      background: require('@/assets/navbar-background.jpg')
+      background: require('@/assets/navbar-background.jpg'),
+      drawer: false
     }),
   }
 </script>
