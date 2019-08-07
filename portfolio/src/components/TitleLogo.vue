@@ -4,7 +4,7 @@
             <v-img
             src="../assets/title-logo.png"
             lazy-src="../assets/title-logo.png"
-            max-width="500"
+            max-width="450"
             max-height="auto"
             ></v-img>
         </v-layout>
