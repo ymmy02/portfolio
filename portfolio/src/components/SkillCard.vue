@@ -2,7 +2,7 @@
   <v-flex md6 sm12>
     <v-hover v-slot:default="{ hover }">
         <v-card
-            height="250"
+            height="90%"
             class="ma-3 brown lighten-5"
             :elevation="hover ? 12 : 2"
             outlined
@@ -21,8 +21,7 @@
                     :src="image"
                     :lazy-src="image"
                     class="mx-5"
-                    max-width="100"
-                    height="auto"
+                    max-width="12%"
                 ></v-img>
             </v-layout>
         </v-card>
