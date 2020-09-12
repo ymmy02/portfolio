@@ -1,8 +1,8 @@
 # My Portfolio Page
 
-# How to build and deploy
+## How to build and deploy
 
-```
+```shell script
 rm -rf docks
 cd portfolio
 yarn build
